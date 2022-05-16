@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "PukiWiki Editor",
+  "version": "1.0.0",
+  "description": "Make PukiWiki's page edit more comfortable.",
+  "content_scripts": [
+    {
+      "matches": ["https://ppwww.phys.sci.kobe-u.ac.jp/*"],
+      "js": ["jquery-3.6.0.min.js", "content.js"]
+    }
+  ]
+}
