@@ -10,7 +10,7 @@
       "js": [
         "jquery-3.6.0.min.js",
         "encoding.min.js",
-        "lib/euc-jp2.js",
+        "lib/euc-jp.js",
         "serialize.js",
         "pukiwiki-editor-main.js"
       ]
