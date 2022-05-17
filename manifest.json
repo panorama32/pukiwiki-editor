@@ -5,8 +5,15 @@
   "description": "Make PukiWiki's page edit more comfortable.",
   "content_scripts": [
     {
-      "matches": ["https://ppwww.phys.sci.kobe-u.ac.jp/*"],
-      "js": ["jquery-3.6.0.min.js", "content.js"]
+      "matches": ["https://ppwww.phys.sci.kobe-u.ac.jp/*?cmd=edit*"],
+      "css": ["style.css"],
+      "js": [
+        "jquery-3.6.0.min.js",
+        "encoding.min.js",
+        "lib/euc-jp2.js",
+        "serialize.js",
+        "pukiwiki-editor-main.js"
+      ]
     }
   ]
 }

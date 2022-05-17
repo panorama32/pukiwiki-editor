@@ -1,0 +1,8 @@
+#pukiwiki-editor-container {
+  background-color: beige;
+}
+
+.pukiwiki-editor-pane {
+  width: initial !important;
+  /* float: left; */
+}
