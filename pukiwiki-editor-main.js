@@ -35,3 +35,8 @@ const main = async () => {
 };
 
 main();
+
+console.log(
+  "%cYou're on PukiWiki Editor!",
+  "color: #00bda6; font-weight: bold; font-size: 40px;"
+);
