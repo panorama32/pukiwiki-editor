@@ -8,7 +8,9 @@ let goingOnNum = 0;
 const reloadIfHaveFinishedTyping = () => {
   goingOnNum++;
   if (goingOnNum >= 2) {
+    goingOnNum--;
     return;
   }
+  goingOnNum--;
   reload();
 };
