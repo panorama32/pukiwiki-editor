@@ -50,7 +50,13 @@
   </style>
 </head>
 <body class="pukiwiki-editor-popup">
+  <p style="font-size: 0.75em; color:red">※ Please reload if you change the settings.</p>
   <p class="setting-title">Preview Auto Update</p>
+  <details style="margin-bottom: 10px; font-size: 0.75em; color: red">
+    <summary>Read before use</summary>
+    <p style="font-size: 0.75em; color:#aaa">Turning this function on may overload the server.
+      Please ask the server administrator for permission before using this function. The maximum update rate is 1 request/s.</p>
+  </details>
   <div>
     <label for="toggle" class="toggle_label">
       <div class="toggle">
@@ -61,7 +67,6 @@
     </label>
   </div>
   <p class="setting-title">Change Editor Font</p>
-  <p style="font-size: 0.75em; color:#aaa">Please reload to reflect</p>
   <div>
     <select id="font" style="height: 30px; width: 120px;">
       <option value="default">default</option>
