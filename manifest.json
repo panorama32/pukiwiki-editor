@@ -2,7 +2,12 @@
   "manifest_version": 3,
   "name": "PukiWiki Editor",
   "version": "1.0.0",
-  "description": "Make PukiWiki's page edit more comfortable.",
+  "description": "Make PukiWiki more comfortable.",
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
   "permissions": ["storage"],
   "action": {
     "default_title": "PukiWiki Editor",
