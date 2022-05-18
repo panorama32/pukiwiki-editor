@@ -10,8 +10,10 @@
       "js": [
         "packages/jquery-3.6.0.min.js",
         "packages/encoding.min.js",
-        "euc-jp.js",
-        "serialize.js",
+        "api/euc-jp.js",
+        "api/serialize.js",
+        "api/ajax.js",
+        "setup.js",
         "pukiwiki-editor-main.js"
       ]
     }
