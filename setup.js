@@ -13,7 +13,7 @@ const setup = async () => {
   $("textarea[name=msg]").attr("id", "edit-pane");
 
   $("input[name=template]").after(
-    '<button type="button" id="reload">更新</button>'
+    '<button type="button" id="reload">プレビュー更新</button>'
   );
 
   chrome.storage.sync.get(null, (options) => {
@@ -21,4 +21,6 @@ const setup = async () => {
       $("#edit-pane").css("font-family", options.font);
     }
   });
+
+  $("input[name=preview]").css("display", "none");
 };

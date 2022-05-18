@@ -8,7 +8,7 @@ const main = async () => {
 
     // 改めてtextareaとpreviewを取得
     const editPane = $("#edit-pane");
-    const previewPane = $("#preview");
+    // const previewPane = $("#preview");
 
     autosize(editPane);
 
