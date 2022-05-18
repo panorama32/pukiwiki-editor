@@ -3,6 +3,11 @@
   "name": "PukiWiki Editor",
   "version": "1.0.0",
   "description": "Make PukiWiki's page edit more comfortable.",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "PukiWiki Editor",
+    "default_popup": "popup.html"
+  },
   "content_scripts": [
     {
       "matches": ["https://ppwww.phys.sci.kobe-u.ac.jp/*?cmd=edit*"],

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <style>
+  .toggle_label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+  }
+  input[type='checkbox'] {
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+  input:checked ~ .base {
+    background-color: rgb(219, 234, 254);
+    transition: 0.5s;
+  }
+  input:checked ~ .circle {
+    transform: translateX(100%);
+    background-color: blue;
+  }
+  .base {
+    width: 56px;
+    border-radius: 15px;
+    height: 32px;
+    background-color: #ddd;
+  }
+  .circle {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: white;
+    transition: 0.3s;
+  }
+  .toggle {
+    position: relative;
+  }
+  .pukiwiki-editor-popup {
+    background-color: #e2ffa0;
+    width: 120px;
+  }
+  .setting-title {
+    color: #48483E;
+  }
+  </style>
+</head>
+<body class="pukiwiki-editor-popup">
+  <p class="setting-title">Preview Auto Update</p>
+  <div>
+    <label for="toggle" class="toggle_label">
+      <div class="toggle">
+        <input type="checkbox" id="toggle" />
+        <div class="circle"></div>
+        <div class="base"></div>
+      </div>
+    </label>
+  </div>
+  <p class="setting-title">Change Editor Font</p>
+  <p style="font-size: 0.75em; color:#aaa">Please reload to reflect</p>
+  <div>
+    <select id="font" style="height: 30px; width: 120px;">
+      <option value="default">default</option>
+      <option value="'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif</option>
+      <option value="'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif</option>
+      <option value="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">'Segoe UI', Tahoma, Geneva, Verdana, sans-serif</option>
+      <option value="'Times New Roman', Times, serif">'Times New Roman', Times, serif</option>
+      <option value="'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif</option>
+      <option value="Arial, Helvetica, sans-serif">Arial, Helvetica, sans-serif</option>
+      <option value="Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Cambria, Cochin, Georgia, Times, 'Times New Roman', serif</option>
+      <option value="Georgia, 'Times New Roman', Times, serif">Georgia, 'Times New Roman', Times, serif</option>
+      <option value="Verdana, Geneva, Tahoma, sans-serif">Verdana, Geneva, Tahoma, sans-serif</option>
+    </select>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

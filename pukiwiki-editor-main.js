@@ -21,6 +21,15 @@ const main = async () => {
         console.log({ e });
         setTimeout("reloadIfHaveFinishedTyping()", 1000);
       }
+
+      console.log({ e });
+
+      if (e.key === "^") {
+        chrome.storage.sync.get(null, (options) => {
+          console.log(options.automaticUpdateEnabled);
+          console.log(options.font);
+        });
+      }
     });
 
     editPane.keypress((e) => {
@@ -33,3 +42,5 @@ const main = async () => {
 };
 
 main();
+
+console.log(document.querySelector("select[name=template_page]").value);

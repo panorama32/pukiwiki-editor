@@ -15,4 +15,10 @@ const setup = async () => {
   $("input[name=template]").after(
     '<button type="button" id="reload">更新</button>'
   );
+
+  chrome.storage.sync.get(null, (options) => {
+    if (options.font !== undefined && options.font !== "default") {
+      $("#edit-pane").css("font-family", options.font);
+    }
+  });
 };
