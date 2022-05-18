@@ -11,4 +11,8 @@ const setup = async () => {
 
   // textareaにidを付加
   $("textarea[name=msg]").attr("id", "edit-pane");
+
+  $("input[name=template]").after(
+    '<button type="button" id="reload">更新</button>'
+  );
 };
