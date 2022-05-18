@@ -9,11 +9,11 @@ If you want to use it on another PukiWiki, you will have to edit the code yourse
 
 ## Editor and Preview
 
-[Editor and Preview](./docs/images/editor-and-preview.png)
+![Editor and Preview](./docs/images/editor-and-preview.png)
 
 ## Popup for Setting
 
-[Popup for Setting](./docs/images/popup.png)
+![Popup for Setting](./docs/images/popup.png)
 
 # Features
 
