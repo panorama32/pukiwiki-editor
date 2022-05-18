@@ -1,8 +1,11 @@
 # PukiWiki Editor
 
 PukiWiki Editor is a Chrome extension for more comfortable use of the PukiWiki editing page.
+
 It was created for PukiWiki, which is used in the Particle Physics Laboratory of the Faculty of Science at Kobe University, so it is localised to it.
+
 (The location where PukiWiki is hosted is hard-coded.)
+
 If you want to use it on another PukiWiki, you will have to edit the code yourself.
 
 [PukiWiki Official Site](https://pukiwiki.osdn.jp/)
