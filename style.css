@@ -2,7 +2,15 @@
   background-color: beige;
 }
 
-.pukiwiki-editor-pane {
-  width: initial !important;
-  /* float: left; */
+#edit-pane {
+  resize: vertical;
+  width: 49%;
+  margin-right: 1%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#preview {
+  width: 50%;
+  display: inline-block;
 }
