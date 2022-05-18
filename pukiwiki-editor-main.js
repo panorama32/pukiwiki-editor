@@ -12,11 +12,21 @@ const main = async () => {
 
     autosize(editPane);
 
-    // editPane.keypress((e) => {
-    //   console.log({ e });
-    // });
+    editPane.keyup((e) => {
+      if (
+        e.originalEvent.key === "Backspace" ||
+        e.originalEvent.code === "Backspace" ||
+        e.originalEvent.keyCode === 8
+      ) {
+        console.log({ e });
+        setTimeout("reloadIfHaveFinishedTyping()", 1000);
+      }
+    });
 
-    // reload();
+    editPane.keypress((e) => {
+      console.log({ e });
+      setTimeout("reloadIfHaveFinishedTyping()", 1000);
+    });
   } catch (e) {
     console.error(e);
   }
